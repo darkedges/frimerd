@@ -1,0 +1,10 @@
+erDiagram
+	role {
+		string _id
+		string name PK "unique"
+		string description
+		array[relationship_user] members
+		array[relationship_assignment] assignments
+		string condition
+		array[object] temporalConstraints
+	}

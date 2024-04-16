@@ -1,0 +1,11 @@
+erDiagram
+	user || --|| role : has
+	user || --|| assignment : has
+	user || --|| user : has
+	user || --|| organization : has
+	role || --|| user : has
+	role || --|| assignment : has
+	assignment || --|| role : has
+	assignment || --|| user : has
+	organization || --|| user : has
+	organization || --|| organization : has

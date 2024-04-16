@@ -1,0 +1,34 @@
+erDiagram
+	user {
+		string _id "cannot-contain-characters"
+		string password "minimum-length,at-least-X-capitals,at-least-X-numbers,cannot-contain-others"
+		array[object] kbaInfo
+		object preferences
+		string mail "valid-email-address-format,maximum-length"
+		string sn "minimum-length,maximum-length"
+		string description "minimum-length,maximum-length"
+		string givenName "minimum-length,maximum-length"
+		string city "minimum-length,maximum-length"
+		string country "minimum-length,maximum-length"
+		string postalCode "minimum-length,maximum-length"
+		string accountStatus "regexpMatches"
+		array[relationship_role] roles
+		array[relationship_assignment] assignments
+		array[relationship_role] authzRoles
+		array[relationship_user] reports
+		array[object] effectiveRoles
+		array[object] effectiveAssignments
+		string telephoneNumber "minimum-length,maximum-length"
+		string stateProvince "minimum-length,maximum-length"
+		string postalAddress "minimum-length,maximum-length"
+		string userName "valid-username,cannot-contain-characters,minimum-length,maximum-length"
+		relationship manager
+		object lastSync
+		array[object] consentedMappings
+		array[relationship_organization] ownerOfOrg ""
+		array[relationship_organization] adminOfOrg ""
+		array[relationship_organization] memberOfOrg ""
+		array[string] memberOfOrgIDs
+		string activeDate "valid-datetime"
+		string inactiveDate "valid-datetime"
+	}

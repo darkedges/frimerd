@@ -1,0 +1,15 @@
+erDiagram
+	organization {
+		string name
+		string description
+		array[relationship_user] owners
+		array[relationship_user] admins
+		array[relationship_user] members
+		relationship parent
+		array[relationship_organization] children ""
+		array[string] adminIDs
+		array[string] ownerIDs
+		array[string] parentAdminIDs
+		array[string] parentOwnerIDs
+		array[string] parentIDs
+	}

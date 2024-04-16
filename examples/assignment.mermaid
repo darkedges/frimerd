@@ -1,0 +1,13 @@
+erDiagram
+	assignment {
+		string _id
+		string name
+		string description
+		string mapping "mapping-exists"
+		array[object] attributes
+		array[string] linkQualifiers
+		array[relationship_role] roles
+		array[relationship_user] members
+		string condition
+		number weight
+	}
